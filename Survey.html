@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+ <html lang="en">
+   <head>
+     <link rel="stylesheet" href="styles.css">
+     <meta charset="UTF-8">
+     <title>Survival Games Feedback Form</title>
+     </head>
+<body>
+  <h1 id="title">Survival Games Feedback Form</h1>
+  <p id="description">Tell us what you enjoy the most about playing DayZ or S.T.A.L.K.E.R.:</p>
+<ul>
+<li>Weapons and Combat: Your preference for realistic weapons, combat mechanics, and customization.</li>
+<li>Realism: How important are realistic survival elements like health, weather, and interactions with other players?</li>
+<li>Survival Challenges: The role of managing hunger, thirst, and stamina in your gaming experience.</li>
+</ul>
+  <form id="survey-form"> 
+  <label id="name-label" for="name">Name:</label> 
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <label id="email-label" for="email">Email:</label> 
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <label id="number-label" for="number">Number:</label>
+  <input type="number" id="number" name="number" min="1" max="100" placeholder="Number" required>
+  <label for="dropdown">Which survival game do you prefer?</label>
+  <select id="dropdown" name="favorite-game" required>
+    <option value="dayz">DayZ</option>
+    <option value="stalker">S.T.A.L.K.E.R</option>
+    </select>
+    <input type="submit" id="submit" value="Submit">
+    <p>What aspect of DayZ or S.T.A.L.K.E.R. do you enjoy the most?</p>
+    <label>
+      <input type="radio" name="favorite-aspect" value="combat" required>
+      Combat with realistic weapons
+      </label>
+      <label>
+      <input type="radio" name="favorite-aspect" value="exploration" required>
+        Exploring open-world environments
+         </label>
+          <label>
+            <input type="radio" name="favorite-aspect" value="survival" required>
+            Managing survival elements (hunger,thirst,stamina)
+            </label>
+            <p>Which survival elements do you prefer to manage?</p>
+              <label>
+                <input type="checkbox" name="favorite-elements[]" value="combat">
+                Combat with realistic weapons
+                </label>
+                <label>
+                <input type="checkbox" name="favorite-elements[]" value="exploration">
+                Exploring open-world environments
+                </label>
+                <label>
+                <input type="checkbox" name="favorite-elements[]" value="survival">
+                Managing survival elements (hunger, thirst, stamina)
+                </label>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter any additional comments here..."></textarea>
+
+                </form> 
